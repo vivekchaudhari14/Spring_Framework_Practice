@@ -35,6 +35,6 @@
 		<!-- using p-schema (p namespace) in Spring XML.  -->
 		
 		<bean class = "SpringFramework.SpringPractice.StudentInfo" name = "StudentInfo" 
-			p:s_name ="Vivek" p:s_class="MCA II" p:Addreses = "Pimpale"
+			p:s_name ="Vivek" p:s_class="MCA II" p:Addreses = "Pimpale "
 		/>
 </beans>
