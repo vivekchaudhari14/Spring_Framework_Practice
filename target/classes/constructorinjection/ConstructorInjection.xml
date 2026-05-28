@@ -32,7 +32,7 @@
             />  -->
             
             
-            <!--   Remove ambiguity -->
+            <!--   Remove ambiguity  If multiple constructor are there -->
             
             <bean class ="constructorinjection.ConstructorInjection" name = "ConstructorInjection">
            			<constructor-arg value = " Vivek" type = "String" index="1"/>

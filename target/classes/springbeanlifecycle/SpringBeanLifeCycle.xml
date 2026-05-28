@@ -10,13 +10,11 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
            
-           <bean class = "SpringFramework.SpringPractice.UsingProperties" name = "UsingProperties">
-           		<property name="props">
-           			<props>
-           				<prop key="name">Vivek</prop>
-           				<prop key="age">22</prop>
-           				<prop key="class_Name">Mca</prop>
-           			</props>
-           		</property>
-           </bean>      
-   </beans>
+           <bean class = "springbeanlifecycle.SpringBeanLifeCycle"  name = "SpringBeanLifeCycle"
+           			init-method="init" destroy-method="destroy"		
+           	>
+           		<property name="product" value = "sugar" />
+           		<property name="price" value = "77"/>
+           </bean> 
+           
+</beans>
