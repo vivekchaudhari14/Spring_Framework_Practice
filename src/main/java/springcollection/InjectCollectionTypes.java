@@ -1,4 +1,4 @@
-package SpringFramework.SpringPractice;
+package springcollection;
 
  import java.util.ArrayList;
  import java.util.Set;

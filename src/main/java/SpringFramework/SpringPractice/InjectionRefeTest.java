@@ -8,5 +8,6 @@ public class InjectionRefeTest {
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringFramework/SpringPractice/InjectionRefe.xml");
 		InjectionRefe ir = (InjectionRefe) context.getBean("class1");
 		System.out.println(ir);
+		System.out.println(ir.getName().getClass().getName());
 	}
 }
