@@ -13,52 +13,5 @@
            http://www.springframework.org/schema/util
            http://www.springframework.org/schema/util/spring-util.xsd">
            
-          <util:list list-class = "java.util.ArrayList" id = "mybestfriends">
-          		<value>Harshal</value>
-          		<value>Mayur</value>
-          		<value>Uday</value>
-          		<value>kalpesh</value>
-          </util:list>
-          
-          <util:map map-class = "java.util.HashMap" id = "feesster">
-          		<entry key ="SpringFramework" value = "520656" />
-          		<entry key ="CoreJava" value = "40000" />
-          		<entry key ="Hibernate" value = "51545" />
-          		<entry key ="Mvc" value = "45545" />
-          		
-          </util:map>
-          
-          <util:set set-class = "java.util.HashSet" id = "rollnumber">
-          		<value>1</value>
-          		<value>2</value>
-          		<value>3</value>
-          		<value>4</value>
-          		
-          </util:set>
-          
-          <util:properties id = "dbConfig">
-          		<prop key="jdbc_Driver">com.mysql.jdbc.Driver</prop>
-          		<prop key="userName">user</prop>
-          		<prop key="password">user@123</prop>
-          		<prop key="url">mysql:jdbc://localhost:3306/databaseName</prop>
-          </util:properties>
-          
-          <bean class = "standalonecollection.Person" name = "frd">
-          
-          <!-- <property name="friends">
-          		<ref bean = ""/>
-          </property> -->
-          
-          		<property name="friends" ref = "mybestfriends"/>
-          		<property name="feesStr" ref = "feesster"/>
-          		<property name="roll_number" ref ="rollnumber" />
-          		<property name="properties" ref = "dbConfig" />
-          		
-          </bean>
-          
-          <!-- <bean class = "standalonecollection.Person" name = "frd2">
-          
-          		<property name="friends" ref = "mybestfriends"/>
-          		
-          </bean> -->
+         
 </beans>
