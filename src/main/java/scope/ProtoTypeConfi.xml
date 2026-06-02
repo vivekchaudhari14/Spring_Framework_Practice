@@ -16,6 +16,6 @@
           
      
           
-          <bean class = "scope.ProtoTypeConfi" name = "prototype" scope="prototype" />
-         
+          <!-- <bean class = "scope.ProtoTypeConfi" name = "prototype" scope="prototype" /> -->
+         <bean class = "scope.ProtoTypeConfi" name = "prototype" scope="prototype" />
 </beans>

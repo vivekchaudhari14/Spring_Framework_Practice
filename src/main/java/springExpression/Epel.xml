@@ -13,9 +13,6 @@
            http://www.springframework.org/schema/util
            http://www.springframework.org/schema/util/spring-util.xsd">
            
-          
-     
-          
-          <!-- <bean class = "scope.ProtoTypeConfi" name = "prototype" scope="prototype" /> -->
-         <bean class = "scope.ProtoTypeConfi" name = "prototype" scope="prototype" />
+           <context:component-scan base-package="springExpression" />
+         
 </beans>
