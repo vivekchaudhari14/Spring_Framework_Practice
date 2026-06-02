@@ -23,8 +23,11 @@ public class Test {
 //		LogicalOp ro = context.getBean(LogicalOp.class);
 //		System.out.println(ro.getRes());
 		
-		AccesingBean ab = context.getBean(AccesingBean.class);
-		System.out.println(ab.Details());
+//		AccesingBean ab = context.getBean(AccesingBean.class);
+//		System.out.println(ab.Details());
+		
+		MethodCalling mc = context.getBean(MethodCalling.class);
+		System.out.println(mc.getMessage());
 		
 	}
 
