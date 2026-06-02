@@ -14,8 +14,11 @@ public class Test {
 	
 		// Using Literal Expression
 		
-		LiteralExp l = context.getBean(LiteralExp.class);
-		System.out.println(l.getstr());
+//		LiteralExp l = context.getBean(LiteralExp.class);
+//		System.out.println(l.getstr());
+		
+		RelationalOp rp = context.getBean(RelationalOp.class);
+		System.out.println(rp.getResult());
 		
 	}
 
