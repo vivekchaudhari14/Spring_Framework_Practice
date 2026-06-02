@@ -19,9 +19,12 @@ public class Test {
 		
 //		RelationalOp rp = context.getBean(RelationalOp.class);
 //		System.out.println(rp.getResult());
+//		
+//		LogicalOp ro = context.getBean(LogicalOp.class);
+//		System.out.println(ro.getRes());
 		
-		LogicalOp ro = context.getBean(LogicalOp.class);
-		System.out.println(ro.getRes());
+		AccesingBean ab = context.getBean(AccesingBean.class);
+		System.out.println(ab.Details());
 		
 	}
 
