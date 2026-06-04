@@ -26,9 +26,11 @@ public class Test {
 //		AccesingBean ab = context.getBean(AccesingBean.class);
 //		System.out.println(ab.Details());
 		
-		MethodCalling mc = context.getBean(MethodCalling.class);
-		System.out.println(mc.getMessage());
+//		MethodCalling mc = context.getBean(MethodCalling.class);
+//		System.out.println(mc.getMessage());
 		
+		Ternary t = context.getBean(Ternary.class);
+		System.out.println(t.getResult());
 	}
 
 }
