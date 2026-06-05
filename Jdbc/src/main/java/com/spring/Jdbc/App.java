@@ -8,6 +8,9 @@ public class App
 {
     public static void main( String[] args )
     {
+    	
+    	// Not Prefered
+    	
         ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/Jdbc/NewFile.xml");
         JdbcTemplate template = context.getBean("JdbcTemplate",JdbcTemplate.class);
         
