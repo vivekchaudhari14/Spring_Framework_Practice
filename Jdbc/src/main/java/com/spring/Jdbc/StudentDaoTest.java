@@ -13,11 +13,17 @@ public class StudentDaoTest {
 		
 		Student student = new Student();
 		
-		student.setId(54);
-		student.setName("Uday");
-		student.setCity("Yerwada");
+		/*
+		 * student.setId(54); student.setName("Uday"); student.setCity("Yerwada");
+		 * 
+		 * int res = s.insert(student); System.out.println("Data Inserted"+res);
+		 */
+	
+		student.setName("Vivek C");
+		student.setCity("Pimpale");
+		student.setId(111);
 		
-		int res = s.insert(student);
-		System.out.println("Data Inserted"+res);
+		int res = s.update1(student);
+		System.out.println("Data updated"+res);
 	}
 }
