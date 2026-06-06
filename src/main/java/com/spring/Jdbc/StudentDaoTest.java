@@ -1,5 +1,7 @@
 package com.spring.Jdbc;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.spring.Jdbc.dao.StudentDao;
@@ -26,7 +28,13 @@ public class StudentDaoTest {
 		 * System.out.println("Student is deleted"+res);
 		 */
 		
-		Student student = s.getStudent(203);
-		System.out.println(student);
+//		Student student = s.getStudent(203);
+//		System.out.println(student);
+		
+		List<Student> students = s.getAllStudent();
+		
+		for (Student student : students) {
+				System.out.println(student);
+		}
 	}
 }
