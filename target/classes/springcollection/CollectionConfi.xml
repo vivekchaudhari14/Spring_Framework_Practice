@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+           
+           <bean class = "springcollection.InjectCollectionTypes" name = "collection">
+          	<property name="roll_Number">
+          		<list>
+          			<value>11</value>
+          			<value>12</value>
+          			<value>13</value>
+          			<value>14</value>
+          			<value>15</value>
+          		</list>
+          	</property>
+          	
+          	<property name="name">
+          		<set>
+          			<value>Vivek</value>
+          			<value>Harshal</value>
+          			<value>Mayur</value>
+          			<value>Mohit</value>
+          			<value>rohit</value>
+          		</set>
+          	</property>
+          	
+          	<property name="sub_Add">
+          		<map>
+          			<entry key = "java " value = "Pimpale" />
+          			<entry key = "Spring Boot" value = "Yerwada"/>
+          			<entry key = "Angular" value  = "Mumbai"/>
+          			<entry key = "Html" value = "Nagpur" />
+          			<entry key = "JavaScript" value = "Gandinagr"/>
+          		</map>
+          	</property>
+           </bean>
+           
+           
+   </beans>
