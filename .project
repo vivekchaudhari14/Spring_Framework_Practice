@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
+	<name>Jdbc</name>
+=======
 	<name>SpringPractice</name>
+>>>>>>> a8319bdff0ebc070b9535261d84b8498288b8dcf
 	<comment></comment>
 	<projects>
 	</projects>
