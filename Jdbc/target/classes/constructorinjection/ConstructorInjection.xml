@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+           
+           <!-- Using Constructor tag -->
+           <!-- <bean class ="constructorinjection.ConstructorInjection" name = "ConstructorInjection">
+           		<constructor-arg value = "Vivek"/>
+           		<constructor-arg value = "Chaudhari"/>
+           		<constructor-arg value = "Mca"/>
+           </bean>  -->     
+           
+           <!-- Using c schema is used for Constructor Injection in XML configuration.  -->
+           
+          <!--  <bean class ="constructorinjection.ConstructorInjection" name = "ConstructorInjection" 
+           		c:name = "Vivek" c:surname = "Chaudhari" c:class_Name ="Mca II"
+            /> -->
+            
+            
+            <!-- Using index  Not use they Facinf somme abguity issues -->
+            
+           <!--  <bean class ="constructorinjection.ConstructorInjection" name = "ConstructorInjection" 
+           		c:_0 = " Vivek" c:_1 = " Chaudhari" c:_3 = " Mca II"
+            />  -->
+            
+            
+            <!--   Remove ambiguity  If multiple constructor are there -->
+            
+            <bean class ="constructorinjection.ConstructorInjection" name = "ConstructorInjection">
+           			<constructor-arg value = " Vivek" type = "String" index="1"/>
+           			<constructor-arg value = " Chaudhari" type = "String" index="0"/>
+           			<constructor-arg value = " Mca" type = "String" index="2"/>
+            </bean>
+   </beans>

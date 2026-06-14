@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+	
+		<!-- This process is called Setter Injection (a type of Dependency Injection in Spring).  -->
+
+		<!-- <bean class = "SpringFramework.SpringPractice.StudentInfo" name = "StudentInfo">
+			<property name="s_name">
+				<value>vivek</value>
+			</property>
+			<property name="s_class">
+				<value>Fybsc</value>
+			</property>
+			<property name="Addreses">
+				<value>Pimpale</value>
+			</property>
+		</bean> -->
+		
+		<!-- There one shotcut  -->
+		
+		<!-- <bean class = "SpringFramework.SpringPractice.StudentInfo" name = "StudentInfo">
+			<property name="s_name" value = "Vivek" />
+			<property name="s_class" value = "MCA"/>
+			<property name="Addreses" value = "Pimpale"/>
+		</bean> -->
+		
+		<!-- using p-schema (p namespace) in Spring XML.  -->
+		
+		<bean class = "SpringFramework.SpringPractice.StudentInfo" name = "StudentInfo" 
+			p:s_name ="Vivek" p:s_class="MCA II" p:Addreses = "Pimpale "
+		/>
+</beans>
