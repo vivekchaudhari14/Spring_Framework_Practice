@@ -16,7 +16,7 @@ public class ContactController {
 		m.addAttribute("desc","For Programmer");
 	}
 	
-	@RequestMapping("/contact")
+	@RequestMapping("/montact")
 	public String contact() {
 		return "contact";
 	}

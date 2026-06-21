@@ -22,7 +22,7 @@
     	
         <h2 class="text-center mb-4">Contact Form</h2>
 
-         <form action="processform" method="post">
+         <form action="processform1" method="post">
 			
 			<hr>
             <!-- Name -->
