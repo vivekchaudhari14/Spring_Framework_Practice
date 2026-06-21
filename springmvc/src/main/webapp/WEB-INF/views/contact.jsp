@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+	<%@ page isELIgnored="false" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,10 +19,12 @@
 	
 <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card shadow p-4" style="width: 450px;">
+    	
         <h2 class="text-center mb-4">Contact Form</h2>
 
          <form action="processform" method="post">
-
+			
+			<hr>
             <!-- Name -->
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
