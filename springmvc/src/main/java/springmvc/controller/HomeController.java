@@ -47,6 +47,13 @@ public class HomeController {
     	LocalDateTime now = LocalDateTime.now();
     	modelAndView.addObject("time",now);
     	
+    	// list 
+    	List<Integer> marks = new  ArrayList<Integer>();
+    	marks.add(55);
+    	marks.add(47);
+    	marks.add(45);
+    	
+    	modelAndView.addObject("marks",marks);
     	//Stetting View
     	modelAndView.setViewName("help");
     	
